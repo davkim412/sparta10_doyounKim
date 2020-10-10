@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="UTF-8">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+          crossorigin="anonymous">
+
+    <!-- webpage title -->
+    <title>나만의 원페이지 쇼핑몰</title>
+
+    <style>
+        /* Body classes */
+        .wrap {
+            width: 500px;
+            margin: auto;
+        }
+
+        .productImage {
+
+            background-image: url(https://lh3.googleusercontent.com/proxy/K9tIwaceRY0GdS3GevVluX97yDpozRy7KIA4VSRVvbTNhQHBNKWUGtu1uDO4Rrp-GM9LLNq3yUoiowOGbARjbrH_GaqsvkGTR_k8Qvi_1r8rGXHx);
+            border: black;
+            border-radius: 5px;
+            width: 500px;
+            height: 480px;
+
+        }
+
+        .productName {
+        }
+
+        .productDescription {
+        }
+
+        .orderDetail {
+        }
+
+    </style>
+
+    <script>
+        function order() {
+            alert("주문이 완료되었습니다");
+        }
+    </script>
+
+</head>
+
+
+<body>
+<div class="wrap">
+
+    <div class="productImage"></div>
+
+    <div class="productName">
+        <h1>상품제목</h1>
+        <p>가격: 50,000원 / 개</p>
+    </div>
+
+    <div class="productDescription">
+        <h1>주문하기</h1>
+        <p>꼼꼼한 디테일과 섬세한 바느질! 소1등급 가죽을 사용한 고급스러운 제품.</p>
+    </div>
+
+    <div class="orderDetail">
+        <!--주문자 성함: text input-->
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text" id="order-name">주문자 성함</span>
+            </div>
+            <input type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+        </div>
+        <!--수량: drop-down box-->
+        <div class="input-group mb-3">
+            <div class="input-group-append">
+                <label class="input-group-text" for="inputGroupSelect02">Options</label>
+            </div>
+            <select class="custom-select" id="inputGroupSelect02">
+                <option selected>Choose...</option>
+                <option value="1">250mm</option>
+                <option value="2">260mm</option>
+                <option value="3">270mm</option>
+            </select>
+        </div>
+        <!--주소: text input box-->
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text" id="order-address">주소</span>
+            </div>
+            <input type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+        </div>
+        <!--전화번호: text input box-->
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text" id="order-phone">전화번호</span>
+            </div>
+            <input type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+        </div>
+    </div>
+
+    <div class="orderBtn">
+        <button onclick="order()" type="button" class="btn btn-primary">주문하기</button>
+    </div>
+
+</div>
+</body>
+</html>

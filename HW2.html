@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>기획서</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+
+    <style>
+        .wrap {
+            width: 900px;
+            margin: 10px auto;
+            border-style: solid;
+        }
+
+        .box {
+            padding: 100px;
+            width: 750px;
+            margin: 20px auto;
+            border-style: solid;
+            text-align: center;
+        }
+        .item-price{
+            margin: 30px;
+        }
+
+        .description {
+            margin: 30px;
+        }
+
+        .order-form {
+            margin: 30px;
+        }
+
+        .form-group {
+            padding-left: 10px;
+        }
+
+
+        .order-group {
+            text-align: center;
+        }
+
+
+    </style>
+
+
+</head>
+
+<body>
+
+<div class="wrap">
+    <div class="box">
+        <h1>상품 사진</h1>
+
+    </div>
+
+    <div class="item-price">
+        <h1 style="display: inline; font-weight: bold" > 상품제목</h1>
+        <h6 style="display: inline"> 가격: 1,000,000원 / 개</h6>
+
+    </div>
+
+    <div class="description">
+        <h6>이 상품으로 말할 것 같으면 용왕이 찾지 못한 토끼의 간을 찾아 빨간망토의 늑대와 아기돼지 삼형제의 숨결이 고루 녹아 있는 먹으면 120세까지 살 수 있다는 이 상품으로 말할 것 같으면 용왕이
+            찾지 목한 토끼의 간을 찾아 빨간망토의 늑대와 아기돼지... </h6>
+
+    </div>
+
+    <div class="order-form">
+        <h1 style="font-weight:bold">주문하기</h1>
+        <div class="form-group">
+            <label for="exampleFormControlInput1">주문자 성함:</label>
+            <input style="margin-left:5px; padding-right: 180px;border-radius: 10px;" id="exampleFormControlInput1">
+        </div>
+
+        <div class="form-group">
+            <label for="exampleFormControlSelect1">수량:</label>
+            <select style="margin-left:57px; padding-right: 335px;border-radius: 10px;" id="exampleFormControlSelect1">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+            </select>
+        </div>
+
+
+        <div class="form-group">
+            <label for="exampleFormControlInput2">주소:</label>
+            <input style="margin-left:57px; padding-right: 180px;border-radius: 10px;" id="exampleFormControlInput2">
+        </div>
+
+        <div class="form-group">
+            <label for="exampleFormControlInput3">전화번호:</label>
+            <input style="margin-left:25px; padding-right: 180px;border-radius: 10px;" id="exampleFormControlInput3">
+        </div>
+
+
+        <div class="order-group">
+            <button onclick="order()" type="button" style="padding-left: 180px; padding-right: 180px;border-radius: 10px;" name="order">주문하기</button>
+        </div>
+
+    </div>
+
+
+</div>
+
+
+</body>
+</html>
